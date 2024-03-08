@@ -37,6 +37,13 @@ header {
     margin-right: 25px; /* Adjust the spacing between the image and text */
 }
 
+.picture {
+    max-width: 250px; /* Set the maximum width of the image */
+    max-height: 150px; /* Set the maximum height of the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    margin-right: 25px; /* Adjust the spacing between the image and text */
+}
+
 .header-content {
     text-align: left; /* Align the text to the left within the header */
 }
