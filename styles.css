@@ -5,6 +5,25 @@ body {
     box-sizing: border-box;
 }
 
+.navigation-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.navigation-buttons a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-buttons a:hover {
+    background-color: #ddd;
+}
+
 header {
     background-color: #FFA500;
     color: #fff;
