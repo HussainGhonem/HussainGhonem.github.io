@@ -9,8 +9,10 @@ header {
     background-color: #FFA500;
     color: #fff;
     width: 100%;
-    text-align: center;
     position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section {
