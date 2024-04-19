@@ -103,10 +103,3 @@ header {
     }
 }
 
-/* Ensure header remains at the top of the page */
-header {
-    position: fixed;
-    width: 100%;
-    z-index: 999; /* Ensure the header appears above other content */
-}
-
