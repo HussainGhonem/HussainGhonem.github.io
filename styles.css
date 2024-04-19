@@ -102,3 +102,30 @@ header {
         margin-bottom: 10px; /* Add spacing between buttons */
     }
 }
+
+/* Add a fixed position to the header */
+header {
+    background-color: #FFA500;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* Set header position to fixed */
+    width: 100%; /* Ensure the header spans the full width */
+    z-index: 1000; /* Set a high z-index to ensure it appears above other content */
+}
+
+/* Add padding to the body to prevent content from being hidden under the fixed header */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 80px 0 0; /* Add padding to the top equal to the height of the header */
+    box-sizing: border-box;
+}
+
+/* Adjust padding for sections to account for the fixed header */
+section {
+    padding: 40px 0; /* Add padding to the top and bottom */
+}
