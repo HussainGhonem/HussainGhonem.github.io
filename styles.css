@@ -6,7 +6,6 @@ body {
 }
 
 header {
-    position: fixed;
     background-color: #FFA500;
     color: #fff;
     width: 100%;
