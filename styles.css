@@ -21,31 +21,47 @@ header {
     justify-content: center;
 }
 
-.profile-picture,
-.picture {
-    max-width: 100px; /* Adjust size of profile picture */
-    max-height: 100px; /* Adjust size of profile picture */
-    border-radius: 50%; /* Keep profile pictures circular */
-    margin-right: 10px; /* Adjust spacing between profile picture and text */
+section {
+    padding: 40px;
 }
 
-/* Navigation Styles */
+h2 {
+    color: #FFA500;
+}
+
+.profile-picture {
+    max-width: 250px; /* Set the maximum width of the image */
+    max-height: 150px; /* Set the maximum height of the image */
+    border-radius: 50%; /* Add a rounded border for a circular profile picture */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    margin-right: 25px; /* Adjust the spacing between the image and text */
+}
+
+.picture {
+    max-width: 250px; /* Set the maximum width of the image */
+    max-height: 150px; /* Set the maximum height of the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    margin-right: 25px; /* Adjust the spacing between the image and text */
+}
+
+/* Style for navigation buttons */
+
 .navigation-buttons {
+    display: flex;
+    justify-content: space-around;
     margin-top: 20px;
-    text-align: center; /* Center navigation links */
 }
 
 .navigation-buttons a {
     text-decoration: none;
-    color: #333; /* Darken link color */
+    color: black; /* Set the color to black */
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #fff; /* White background */
-    margin: 0 5px; /* Adjust spacing between navigation links */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
 .navigation-buttons a:hover {
-    background-color: #333; /* Darken background on hover */
-    color: #fff; /* Lighten text color on hover */
+    background-color: #333; /* Change the background color on hover */
+    color: white; /* Change text color on hover */
 }
+
+
