@@ -8,7 +8,8 @@ body {
 header {
     background-color: #FFA500;
     color: #fff;
-    width: 100%;
+    width: 10000%;
+    text-align: center; /* Horizontally center the content */
     position: static;
     display: flex;
     align-items: center;
