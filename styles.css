@@ -64,6 +64,10 @@ header {
     /* Adjust header padding */
     header {
         padding: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
     }
 
     /* Adjust profile picture size */
