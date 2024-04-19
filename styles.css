@@ -1,4 +1,4 @@
-/* General Styles */
+/* Reset default margin, padding, and box-sizing */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -6,46 +6,41 @@ body {
     box-sizing: border-box;
 }
 
-/* Header Styles */
-header {
-    background-color: #FFA500;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: static; /* Reset position */
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+/* Section padding and heading color */
 section {
     padding: 40px;
 }
 
 h2 {
-    color: #FFA500;
+    color: #333;
 }
 
-.profile-picture {
-    max-width: 250px; /* Set the maximum width of the image */
-    max-height: 150px; /* Set the maximum height of the image */
+/* Header styles */
+header {
+    position: static;
+    background-color: #FFA500;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture, img {
+    width: 20px; /* Set the width of the image */
+    height: 20px; /* Set the height of the image */
     border-radius: 50%; /* Add a rounded border for a circular profile picture */
     object-fit: cover; /* Maintain aspect ratio and cover the entire container */
-    margin-right: 25px; /* Adjust the spacing between the image and text */
+    margin-right: 20px; /* Adjust the spacing between the image and text */
 }
 
-.picture {
-    max-width: 250px; /* Set the maximum width of the image */
-    max-height: 150px; /* Set the maximum height of the image */
-    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
-    margin-right: 25px; /* Adjust the spacing between the image and text */
+/* Align header content to the left */
+.header-content {
+    text-align: left;
 }
 
 /* Style for navigation buttons */
-
 .navigation-buttons {
     display: flex;
     justify-content: space-around;
@@ -63,5 +58,3 @@ h2 {
     background-color: #333; /* Change the background color on hover */
     color: white; /* Change text color on hover */
 }
-
-
