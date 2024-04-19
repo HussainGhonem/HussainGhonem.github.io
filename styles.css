@@ -68,4 +68,37 @@ header {
     color: white; /* Change text color on hover */
 }
 
+/* Add responsive styles */
+@media only screen and (max-width: 768px) {
+    /* Adjust header styles for smaller screens */
+    header {
+        padding: 10px; /* Reduce padding */
+    }
 
+    .profile-picture {
+        max-width: 150px; /* Reduce profile picture size */
+        max-height: 100px; /* Reduce profile picture size */
+        margin-right: 15px; /* Reduce spacing */
+    }
+
+    .picture {
+        max-width: 150px; /* Reduce image size */
+        max-height: 100px; /* Reduce image size */
+        margin-right: 15px; /* Reduce spacing */
+    }
+
+    .header-content {
+        text-align: center; /* Center-align header content */
+    }
+
+    /* Adjust navigation button styles for smaller screens */
+    .navigation-buttons {
+        flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+        margin-top: 10px; /* Reduce top margin */
+    }
+
+    .navigation-buttons a {
+        display: block; /* Make buttons block-level */
+        margin-bottom: 10px; /* Add spacing between buttons */
+    }
+}
