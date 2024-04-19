@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -5,60 +6,46 @@ body {
     box-sizing: border-box;
 }
 
+/* Header Styles */
 header {
     background-color: #FFA500;
     color: #fff;
-    width: 10000%;
-    text-align: center; /* Horizontally center the content */
-    position: static;
+    text-align: center;
+    padding: 20px;
+    position: static; /* Reset position */
+}
+
+.header-content {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-section {
-    padding: 40px;
-}
-
-h2 {
-    color: #FFA500;
-}
-
-.profile-picture {
-    max-width: 250px; /* Set the maximum width of the image */
-    max-height: 150px; /* Set the maximum height of the image */
-    border-radius: 50%; /* Add a rounded border for a circular profile picture */
-    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
-    margin-right: 25px; /* Adjust the spacing between the image and text */
-}
-
+.profile-picture,
 .picture {
-    max-width: 250px; /* Set the maximum width of the image */
-    max-height: 150px; /* Set the maximum height of the image */
-    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
-    margin-right: 25px; /* Adjust the spacing between the image and text */
+    max-width: 100px; /* Adjust size of profile picture */
+    max-height: 100px; /* Adjust size of profile picture */
+    border-radius: 50%; /* Keep profile pictures circular */
+    margin-right: 10px; /* Adjust spacing between profile picture and text */
 }
 
-.header-content {
-    text-align: left; /* Align the text to the left within the header */
-}
-
-/* Style for navigation buttons */
-
+/* Navigation Styles */
 .navigation-buttons {
-    display: flex;
-    justify-content: space-around;
     margin-top: 20px;
+    text-align: center; /* Center navigation links */
 }
 
 .navigation-buttons a {
     text-decoration: none;
-    color: black; /* Set the color to black */
+    color: #333; /* Darken link color */
     padding: 10px 20px;
     border-radius: 5px;
+    background-color: #fff; /* White background */
+    margin: 0 5px; /* Adjust spacing between navigation links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
 .navigation-buttons a:hover {
-    background-color: #333; /* Change the background color on hover */
-    color: white; /* Change text color on hover */
+    background-color: #333; /* Darken background on hover */
+    color: #fff; /* Lighten text color on hover */
 }
