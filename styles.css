@@ -72,7 +72,15 @@ header {
 @media only screen and (max-width: 768px) {
     /* Adjust header styles for smaller screens */
     header {
-        padding: 10px; /* Reduce padding */
+        background-color: #FFA500;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed; /* Set header position to fixed */
+        width: 100%; /* Ensure the header spans the full width */
+        z-index: 1000; /* Set a high z-index to ensure it appears above other content */
     }
 
     .profile-picture {
@@ -101,6 +109,13 @@ header {
         display: block; /* Make buttons block-level */
         margin-bottom: 10px; /* Add spacing between buttons */
     }
+    /* Add padding to the body to prevent content from being hidden under the fixed header */
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 80px 0 0; /* Add padding to the top equal to the height of the header */
+        box-sizing: border-box;
+    }
 }
 
 /* Add a fixed position to the header */
@@ -108,7 +123,6 @@ header {
     background-color: #FFA500;
     color: #fff;
     text-align: center;
-    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
